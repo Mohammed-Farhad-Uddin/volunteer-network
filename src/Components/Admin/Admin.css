@@ -1,0 +1,9 @@
+.plusIcon:hover{
+    text-decoration: none;
+}
+.plusIcon{
+    color: black;
+}
+.plusIcon:active{
+    color: darkblue;
+}
