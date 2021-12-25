@@ -6,8 +6,8 @@ import fakeData from '../../fakeData/fakeData.json';
 import { Link } from 'react-router-dom';
 
 
-
 const Home = () => {
+    
     // const onClickToAction=()=>{   //database a patate first e button create kore action create kore patate hoi post method k.post method er jnno action lage
     //         fetch('http://localhost:5000/allTask', {
     //         method: 'POST',
@@ -32,6 +32,9 @@ const Home = () => {
         setSearch(e.target.value)
     }
 
+
+
+    
 
 
     return (

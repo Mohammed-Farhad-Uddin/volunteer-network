@@ -73,7 +73,7 @@ const Login = () => {
 
 
     return (
-        <div className='bg-light' style={{ height: '100vh' }}>
+        <div className='bg-light' style={{ height: '100%' }}>
             <Container>
                 <div style={{ textAlign: 'center', marginBottom: '40px', paddingTop: '40px' }}>
                     <img style={{ width: '200px', height: '60px' }} src={logo} alt="logo" />
@@ -81,7 +81,7 @@ const Login = () => {
                 <div style={{ textAlign: 'center', backgroundColor: 'white', height: '300px', width: '400px', margin: '0px auto', border: '1px solid gray', borderRadius: '5px' }}>
                     <div style={{ position: 'relative', top: '80px' }}>
                         <h1 style={{ marginBottom: '20px' }}>Login With</h1>
-                        <Button onClick={handleGoogleSignIn} style={{ backgroundColor: 'none' }}><FcGoogle style={{ marginRight: '50px', padding: '10px' }} />Continue with Google</Button>
+                        <Button variant='outline-primary' onClick={handleGoogleSignIn} style={{ backgroundColor: 'none', padding:'5px 10px' }}><FcGoogle style={{ marginRight: '50px' }} />Continue with Google</Button>
                         <p>Don't you have an account</p>
                     </div>
                 </div>
