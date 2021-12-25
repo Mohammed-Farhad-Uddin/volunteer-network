@@ -14,7 +14,7 @@ const Register = () => {
     // console.log(registerInfo)
 
     useEffect(() => {
-        fetch(`http://localhost:5000/register/${_id}`)
+        fetch(`https://stark-harbor-85138.herokuapp.com/register/${_id}`)
             .then(res => res.json())
             .then(data => {
                 const { title } = data
@@ -31,7 +31,7 @@ const Register = () => {
 
     const hanleSubmit = (e) => {
         e.preventDefault();
-        fetch('http://localhost:5000/registeredInfo', {
+        fetch('https://stark-harbor-85138.herokuapp.com/registeredInfo', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',

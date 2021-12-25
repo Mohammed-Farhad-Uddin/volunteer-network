@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
     
     // const onClickToAction=()=>{   //database a patate first e button create kore action create kore patate hoi post method k.post method er jnno action lage
-    //         fetch('http://localhost:5000/allTask', {
+    //         fetch('https://stark-harbor-85138.herokuapp.com/allTask', {
     //         method: 'POST',
     //         headers: {
     //             'Content-type': 'application/json',
@@ -23,7 +23,7 @@ const Home = () => {
     const [tasks, setTasks] = useState([])
     const [search, setSearch] = useState('')
     useEffect(() => {
-        fetch('http://localhost:5000/getAllData?search=' + search)
+        fetch('https://stark-harbor-85138.herokuapp.com/getAllData?search=' + search)
             .then((response) => response.json())
             .then((data) => setTasks(data));
     }, [search])

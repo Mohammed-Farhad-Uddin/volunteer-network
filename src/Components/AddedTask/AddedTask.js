@@ -8,7 +8,7 @@ const AddedTask = () => {
     const [addedTasks, setAddedTasks] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/getAddedTask?email=' + user.email)
+        fetch('https://stark-harbor-85138.herokuapp.com/getAddedTask?email=' + user.email)
             .then(res => res.json())
             .then(data => {
                 console.log(data)
@@ -18,7 +18,7 @@ const AddedTask = () => {
 
     const removeTask=(id)=>{
         console.log(id,'clicked')
-        fetch(`http://localhost:5000/delete/${id}`,{
+        fetch(`https://stark-harbor-85138.herokuapp.com/delete/${id}`,{
             method:"DELETE"
         })
         .then(res=>res.json())

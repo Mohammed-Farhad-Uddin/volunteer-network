@@ -11,13 +11,13 @@ const Admin = () => {
     const [allRegisteredInfo, setAllRegisteredInfo] = useState([])
 
     useEffect(() => {
-        fetch('http://localhost:5000/getRegisteredInfo')
+        fetch('https://stark-harbor-85138.herokuapp.com/getRegisteredInfo')
             .then(res => res.json())
             .then(data => setAllRegisteredInfo(data))
     }, [allRegisteredInfo])
 
     const removeVolunteer = (id) => {
-        fetch(`http://localhost:5000/volunteerDelete/${id}`,{
+        fetch(`https://stark-harbor-85138.herokuapp.com/volunteerDelete/${id}`,{
             method:"DELETE"
         })
             .then(res => res.json())
